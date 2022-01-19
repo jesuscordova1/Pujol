@@ -9,7 +9,7 @@ class RestaurantOptionView : UIView{
         
     init(iconName: String, titleString: String, frame: CGRect){
         super.init(frame: frame)
-        self.backgroundColor = .systemGray4
+        self.backgroundColor = .systemGray6
         self.layer.cornerRadius = 20
         self.layer.borderColor = CGColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         self.layer.borderWidth = 2

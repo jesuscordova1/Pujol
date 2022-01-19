@@ -9,16 +9,17 @@ class MenuViewController: UIViewController {
     var height = UIScreen.main.bounds.height
     var dataSource : MenuObject?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemGray5
         initUI()
         getData()
     }
     
     func initUI(){
         tableView = UITableView(frame: CGRect(x: 10, y: 20, width: width-20, height: height-100))
-        tableView?.backgroundColor = .white
+        tableView?.backgroundColor = .systemGray5
         tableView?.delegate = self
         tableView?.dataSource = self
         
@@ -92,19 +93,20 @@ extension MenuViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        let color = UIColor(red: .random(in: 0...1), green: .random(in: 0...1), blue: .random(in: 0...1), alpha: 1)
+        let color = UIColor.systemGray5
         view.backgroundColor = color
         
-        let image = UIImageView(frame: CGRect(x: 2, y: 2, width: 20, height: 20))
-        image.image = UIImage(named: "menu-2")
-        view.addSubview(image)
-        
-        let label = UILabel(frame: CGRect(x: 25, y: 2, width: 200, height:20))
+        let label = UILabel(frame: CGRect(x: 0, y: 2, width: 300, height:20))
         label.text = dataSource?.categorias?[section].nombre ?? ""
-        label.textColor = .white
+        label.textColor = .black
+        label.font = .boldSystemFont(ofSize: 21)
         view.addSubview(label)
     
         return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return height/6
     }
 
 }
