@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2213164F27925A99003CD7E3 /* MenuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2213164E27925A99003CD7E3 /* MenuObject.swift */; };
 		2231222427910F2E00D702DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231222327910F2E00D702DE /* AppDelegate.swift */; };
 		2231222627910F2E00D702DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231222527910F2E00D702DE /* SceneDelegate.swift */; };
 		2231222827910F2E00D702DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231222727910F2E00D702DE /* ViewController.swift */; };
 		2231222B27910F2E00D702DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2231222927910F2E00D702DE /* Main.storyboard */; };
 		2231222D27910F3000D702DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2231222C27910F3000D702DE /* Assets.xcassets */; };
 		2231223027910F3000D702DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2231222E27910F3000D702DE /* LaunchScreen.storyboard */; };
+		223122382791128A00D702DE /* RestaurantOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223122372791128A00D702DE /* RestaurantOptionView.swift */; };
+		2231223A27912B0600D702DE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231223927912B0600D702DE /* MenuViewController.swift */; };
+		2231223C27912B3F00D702DE /* InventarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231223B27912B3F00D702DE /* InventarioViewController.swift */; };
+		2231223E27912B5700D702DE /* PedidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231223D27912B5700D702DE /* PedidoViewController.swift */; };
+		227FB804279653EC00AC8019 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227FB803279653EC00AC8019 /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2213164E27925A99003CD7E3 /* MenuObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuObject.swift; sourceTree = "<group>"; };
 		2231222027910F2E00D702DE /* Pujol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pujol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2231222327910F2E00D702DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2231222527910F2E00D702DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		2231222C27910F3000D702DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2231222F27910F3000D702DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2231223127910F3000D702DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223122372791128A00D702DE /* RestaurantOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOptionView.swift; sourceTree = "<group>"; };
+		2231223927912B0600D702DE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2231223B27912B3F00D702DE /* InventarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioViewController.swift; sourceTree = "<group>"; };
+		2231223D27912B5700D702DE /* PedidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedidoViewController.swift; sourceTree = "<group>"; };
+		227FB803279653EC00AC8019 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2213164B279259C1003CD7E3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				227FB802279653C300AC8019 /* SubViews */,
+				2231223927912B0600D702DE /* MenuViewController.swift */,
+				2213164E27925A99003CD7E3 /* MenuObject.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		2213164C279259CD003CD7E3 /* Inventario */ = {
+			isa = PBXGroup;
+			children = (
+				2231223B27912B3F00D702DE /* InventarioViewController.swift */,
+			);
+			path = Inventario;
+			sourceTree = "<group>";
+		};
+		2213164D279259D6003CD7E3 /* Pedido */ = {
+			isa = PBXGroup;
+			children = (
+				2231223D27912B5700D702DE /* PedidoViewController.swift */,
+			);
+			path = Pedido;
+			sourceTree = "<group>";
+		};
 		2231221727910F2E00D702DE = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +94,11 @@
 		2231222227910F2E00D702DE /* Pujol */ = {
 			isa = PBXGroup;
 			children = (
+				2213164D279259D6003CD7E3 /* Pedido */,
+				2213164C279259CD003CD7E3 /* Inventario */,
+				2213164B279259C1003CD7E3 /* Menu */,
 				2231222327910F2E00D702DE /* AppDelegate.swift */,
+				223122372791128A00D702DE /* RestaurantOptionView.swift */,
 				2231222527910F2E00D702DE /* SceneDelegate.swift */,
 				2231222727910F2E00D702DE /* ViewController.swift */,
 				2231222927910F2E00D702DE /* Main.storyboard */,
@@ -65,6 +107,14 @@
 				2231223127910F3000D702DE /* Info.plist */,
 			);
 			path = Pujol;
+			sourceTree = "<group>";
+		};
+		227FB802279653C300AC8019 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				227FB803279653EC00AC8019 /* MenuTableViewCell.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2231222827910F2E00D702DE /* ViewController.swift in Sources */,
+				2231223E27912B5700D702DE /* PedidoViewController.swift in Sources */,
+				2231223A27912B0600D702DE /* MenuViewController.swift in Sources */,
 				2231222427910F2E00D702DE /* AppDelegate.swift in Sources */,
+				223122382791128A00D702DE /* RestaurantOptionView.swift in Sources */,
+				227FB804279653EC00AC8019 /* MenuTableViewCell.swift in Sources */,
 				2231222627910F2E00D702DE /* SceneDelegate.swift in Sources */,
+				2231223C27912B3F00D702DE /* InventarioViewController.swift in Sources */,
+				2213164F27925A99003CD7E3 /* MenuObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
